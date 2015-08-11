@@ -1,0 +1,245 @@
+* { box-sizing: border-box; }
+
+.clear {clear: both;}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+body {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #353634;
+    margin: 0;
+}
+
+/* ---- NAVIGATION ---- */
+#logo-container {
+	width: 18%;
+    padding: 0 0.5%;
+	margin: 0 0.5%;
+}
+
+#logo {
+	float: left;
+    max-width: 9.375em;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+nav {
+    height: 100px;
+}
+
+nav #menu li {
+	display: inline-block;
+	list-style-type: none;
+    width: 22%;
+	padding: 0.5% 0.5% 0 0;
+	margin: 0 1.5%;
+    text-align: center;
+    float: left;
+    font-size: 1.2em;
+}	
+
+nav #menu li a {
+	text-decoration: none;
+	padding: .5em .5em;
+	color: #3EA6AC;
+}
+
+/* ----INDEX---- */
+#index {
+	margin-top: 3em;
+    width: 100%;
+    min-height: 600px;
+    max-height: 800px;
+    background: url("../images/background.jpg") no-repeat center center fixed;
+}
+
+#index-main {
+    width: 60%;
+    margin: 5em auto;
+    padding: 1em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em; 
+    background-color: rgba(197, 211, 118, 0.2);
+}
+
+
+/* ----WORK---- */
+.flex-images {
+    width: 100%;
+    margin: auto;
+}
+
+/* ----ABOUT---- */
+#about-main {
+    width: 60%;
+    margin: 3em auto;
+    padding: 1em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em; 
+    background-color: rgba(97, 135, 137, 0.3);
+}
+.col {
+    width: 31.25%; /* 300/960 */
+	margin: .52083333%; /* 5/960 */
+	padding: 1.0869565%; /* 5/460 */
+	-webkit-border-radius: 0.625em;
+	-moz-border-radius: 0.625em;
+	border-radius: 0.625em;
+	float: left;
+	line-height: 150%;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.col img {
+    display: block;
+    margin: auto;
+}
+
+
+/* ---- CONTACT ---- */
+#contact-form {
+    width: 60%;
+    margin: 3em auto;
+    padding: 1em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em; 
+    background-color: rgba(97, 135, 137, 0.3);
+}
+
+#contact-form h2 {
+    text-align: center;
+}
+
+input, label { 
+    display: block; 
+}
+
+label, legend, fieldset {
+	padding: 0;
+}
+
+.formblock { 
+	margin-top: 1em;
+    margin-left: 35%;
+	clear: both;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	width: 50%;
+    -webkit-border-radius: .5em;
+    border-radius: .5em; 
+}
+
+input[type=text],
+input[type=email],
+textarea:focus {
+	outline-color: #62A7B5;	
+}
+
+
+button[type=submit] {
+    margin-top: 0.5em;
+    font-size: 100%;
+    padding:0.5em; 
+    background:#62A7B5; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: .5em;
+    border-radius: .5em; 
+    color: #E8EDED;
+}
+
+button[type=submit]:focus { 
+    background:#c5d376; 
+    outline:0;
+}
+
+.validator-error {
+    color: red;
+    font-size: 0.75em;
+}
+
+.error {
+    background-color: #F2F7D5;
+}
+
+
+/* ---- FOOTER ---- */
+
+footer {
+    position: fixed;
+    height: 80px;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(219, 219, 219, 0.7);
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+
+@media (min-width: 1000px) {
+
+}
+
+@media screen and (max-width:1150px) { 
+      .formblock { 
+        margin-left: 25%;
+    }
+    
+    .form {
+        width: 70%;
+    }
+    
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 60%;
+    }  
+}
+
+
+@media screen and (max-width:960px) {
+
+}
+
+
+@media screen and (max-width:620px) {
+    .wrapper {
+        overflow-y: scroll;
+    }
+    footer {
+        height: 50px;
+    }
+    
+    .formblock { 
+        margin-left: 10%;
+    }
+    
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 90%;
+    }
+
+
+@media screen and (max-width:400px) {
+}

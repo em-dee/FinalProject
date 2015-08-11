@@ -1,0 +1,74 @@
+<!---PHP REINCLUDE
+<?php $pageTitle = "Home";
+    $pageDescription = "";
+      include "top.inc" ?>
+--->
+
+<!---DELETE START TOP--->
+<!DOCTYPE html>
+<head>
+  	<title><?php print $pageTitle ?> | 3Sided Projects</title>
+  	<meta charset="utf-8">
+	<meta name="description" content="<?php print $pageDescription ?>">
+	<meta name="keywords" content="">
+  	<meta name="viewport" content="width=device-width">
+<!-- CSS -->
+  	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href="css/jquery.flex-images.css" type="text/css" rel="stylesheet"/>        
+	<link href="css/magnific-popup.css" type="text/css" rel="stylesheet"/>    
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+
+<!-- Javascript -->
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flex-images.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="js/fm.validator.jquery.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>    
+    <script type="text/javascript" src="js/bucket.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<header>
+	<div id="logo-container">
+        <a href="index.html"><img src="images/3sided_logo1.png" alt="logo" id="logo"></a>
+	</div>
+	<nav>
+		<ul id="menu">
+			<li><a href="work.html">WORK</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>				
+		</ul>
+	</nav>			
+</header>
+<!---DELETE END TOP--->    
+
+    
+<div class="wrapper">
+      <div class="flex-images gallery">
+          <div class="item" data-w="720" data-h="540"><img src="images/image1.jpg"></div>
+          <div class="item" data-w="1000" data-h="563"><img src="images/image2.jpg"></div>
+          <div class="item" data-w="1021" data-h="1021"><img src="images/image3.jpg"></div>
+          <div class="item" data-w="480" data-h="480"><video width="300" height="300" controls> <source src="images/video1.mp4" type="video/mp4"></video></div>
+          <div class="item" data-w="640" data-h="640"><img src="images/image4.jpg"></div>
+          <div class="item" data-w="400" data-h="300"><img src="images/image5.jpg"></div>
+      </div>
+</div>	
+	<br class="clear">
+<!---PHP BOTTOM
+<?php include "bottom.inc" ?>
+--->
+<!---DELETE START BOTTOM--->    
+<footer class="clear">
+    <br></br>
+   <p>&copy;Copyright 2015. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+<!---DELETE START BOTTOM--->
